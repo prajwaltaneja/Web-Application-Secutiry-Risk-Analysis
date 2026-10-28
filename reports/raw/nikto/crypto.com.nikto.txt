@@ -1,0 +1,20 @@
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          104.18.112.50
++ Target Hostname:    crypto.com
++ Target Port:        443
+---------------------------------------------------------------------------
++ SSL Info:        Subject:  /C=US/ST=California/L=San Francisco/O=Cloudflare, Inc./CN=crypto.com
+                   Ciphers:  TLS_AES_256_GCM_SHA384
+                   Issuer:   /C=US/O=Cloudflare, Inc./CN=Cloudflare Inc ECC CA-3
++ Message:         Multiple IP addresses found: 104.18.112.50, 104.18.113.50
++ Start Time:      2021-11-16 04:30:00 (GMT-5)
+---------------------------------------------------------------------------
++ Server: cloudflare
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The site uses SSL and the Strict-Transport-Security HTTP header is not defined.
++ Expect-CT is not enforced, upon receiving an invalid Certificate Transparency Log, the connection will not be dropped.
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ All CGI directories 'found', use '-C none' to test none
++ Scan terminated: 20 error(s) and 6 item(s) reported on remote host
++ End Time:        2021-11-16 04:30:37 (GMT-5) (37 seconds)

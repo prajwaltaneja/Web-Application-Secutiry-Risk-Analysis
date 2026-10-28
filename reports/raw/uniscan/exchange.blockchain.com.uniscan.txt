@@ -1,0 +1,14 @@
+####################################
+# Uniscan project                  #
+# http://uniscan.sourceforge.net/  #
+####################################
+V. 6.3
+
+Scan date: 9-11-2021 9:8:3
+======================================================================
+Domain: https://exchange.blockchain.com/
+Server: cloudflare
+IP: 104.18.93.71
+======================================================================
+Scan end date: 9-11-2021 9:8:6
+HTML report saved in: report/exchange.blockchain.com.html

@@ -1,0 +1,34 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-11-16 03:45 EST
+Nmap scan report for 104.26.12.129
+Host is up (0.025s latency).
+Not shown: 996 filtered ports
+PORT     STATE SERVICE  VERSION
+80/tcp   open  http     Cloudflare http proxy
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-server-header: cloudflare
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+443/tcp  open  ssl/https cloudflare
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-server-header: cloudflare
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_sslv2-drown:
+8080/tcp open  http     Cloudflare http proxy
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-server-header: cloudflare
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+8443/tcp open  ssl/https-alt cloudflare
+|_http-server-header: cloudflare
+|_sslv2-drown:
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: bridge|general purpose|switch
+Running (JUST GUESSING): Oracle VirtualBox (98%), QEMU (93%), Bay Networks BayStack 450 switch (88%)
+Network Distance: 2 hops
+TRACEROUTE (using port 80/tcp)
+HOP RTT     ADDRESS
+1   3.85 ms 10.0.2.2
+2   36.52 ms 104.26.12.129
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 243.32 seconds

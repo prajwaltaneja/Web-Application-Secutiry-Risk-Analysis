@@ -1,0 +1,145 @@
+# Target Environment Definitions for Cryptocurrency VAPT Study
+# Conducted at Maharaja Surajmal Institute of Technology (GGSIPU), Delhi
+
+targets:
+  - id: 'blockchain-exchange'
+    name: 'Blockchain.com Exchange'
+    url: 'https://exchange.blockchain.com'
+    type: 'exchange'
+    architecture: 'Web 3.0'
+    ip_addresses:
+      - '104.18.93.71'
+      - '104.16.40.77'
+    cdn_waf: 'Cloudflare'
+    in_scope: true
+    tested_modules: ['nmap', 'nikto', 'whatweb', 'zap', 'sqlmap']
+
+  - id: 'binance-exchange'
+    name: 'Binance Exchange'
+    url: 'https://www.binance.com/en'
+    type: 'exchange'
+    architecture: 'Web 3.0'
+    ip_addresses:
+      - '18.66.78.94'
+      - '18.66.78.84'
+      - '18.66.78.14'
+      - '18.66.78.75'
+    cdn_waf: 'Amazon CloudFront'
+    web_server: 'Tengine'
+    in_scope: true
+    tested_modules: ['nmap', 'nikto', 'whatweb', 'zap']
+
+  - id: 'crypto-exchange'
+    name: 'Crypto.com Exchange'
+    url: 'https://crypto.com'
+    type: 'exchange'
+    architecture: 'Web 3.0'
+    ip_addresses:
+      - '104.18.112.50'
+      - '104.18.113.50'
+    cdn_waf: 'Cloudflare'
+    in_scope: true
+    tested_modules: ['nmap', 'nikto', 'whatweb', 'zap']
+
+  - id: 'kucoin-exchange'
+    name: 'KuCoin Exchange'
+    url: 'https://m.kucoin.com'
+    type: 'exchange'
+    architecture: 'Web 2.0'
+    ip_addresses:
+      - '13.225.103.45'
+    cdn_waf: 'IAS/1.4.2.3-1.17.3 WAF / Proxy'
+    notes: 'Post-breach mitigation analyzed. Server banner altered from nginx to IAS/1.4.2.3-1.17.3.'
+    in_scope: true
+    tested_modules: ['nmap', 'nikto', 'whatweb', 'zap']
+
+  - id: 'coincheck-exchange'
+    name: 'Coincheck Exchange'
+    url: 'https://coincheck.com'
+    type: 'exchange'
+    architecture: 'Web 3.0'
+    ip_addresses:
+      - '13.249.98.23'
+    cdn_waf: 'IAS / AWS CloudFront'
+    notes: 'Post-breach mitigation analyzed. WAF, reverse proxy and load balancing implemented.'
+    in_scope: true
+    tested_modules: ['nmap', 'nikto', 'whatweb', 'zap']
+
+  - id: 'wazirx-exchange'
+    name: 'WazirX Exchange'
+    url: 'https://wazirx.com'
+    type: 'exchange'
+    architecture: 'Web 3.0'
+    ip_addresses:
+      - '104.18.14.88'
+    cdn_waf: 'Cloudflare'
+    in_scope: true
+    tested_modules: ['nmap', 'nikto', 'whatweb', 'zap']
+
+  - id: 'bitcoin-exchange'
+    name: 'Bitcoin.com Exchange'
+    url: 'https://exchange.bitcoin.com'
+    type: 'exchange'
+    architecture: 'Web 3.0'
+    ip_addresses:
+      - '104.18.22.44'
+    cdn_waf: 'Cloudflare'
+    in_scope: true
+    tested_modules: ['nmap', 'nikto', 'whatweb', 'zap']
+
+  - id: 'poly-network-wallet'
+    name: 'Poly Network Wallet / Bridge'
+    url: 'https://poly.network'
+    type: 'wallet'
+    architecture: 'Web 3.0'
+    ip_addresses:
+      - '172.67.142.10'
+    cdn_waf: 'Cloudflare'
+    in_scope: true
+    tested_modules: ['nmap', 'nikto', 'whatweb', 'zap']
+
+  - id: 'ethereum-wallet'
+    name: 'Ethereum Web Portal / Wallet'
+    url: 'https://etherium.com'
+    type: 'wallet'
+    architecture: 'Web 3.0'
+    ip_addresses:
+      - '104.21.32.14'
+    cdn_waf: 'Cloudflare'
+    in_scope: true
+    tested_modules: ['nmap', 'nikto', 'whatweb', 'zap']
+
+  - id: 'blockchain-wallet'
+    name: 'Blockchain.com Wallet'
+    url: 'https://www.blockchain.com/wallet'
+    type: 'wallet'
+    architecture: 'Web 3.0'
+    ip_addresses:
+      - '104.16.40.77'
+      - '104.18.93.71'
+    cdn_waf: 'Cloudflare'
+    in_scope: true
+    tested_modules: ['nmap', 'nikto', 'whatweb', 'zap', 'sqlmap']
+
+  - id: 'bitcoin-wallet'
+    name: 'Bitcoin.com Wallet'
+    url: 'https://wallet.bitcoin.com'
+    type: 'wallet'
+    architecture: 'Web 3.0'
+    ip_addresses:
+      - '104.18.22.44'
+    cdn_waf: 'Cloudflare'
+    in_scope: true
+    tested_modules: ['nmap', 'nikto', 'whatweb', 'zap']
+
+  - id: 'atomic-wallet'
+    name: 'Atomic Wallet'
+    url: 'https://atomicwallet.io'
+    type: 'wallet'
+    architecture: 'Web 3.0'
+    ip_addresses:
+      - '104.26.12.129'
+      - '172.67.73.252'
+    cdn_waf: 'Cloudflare'
+    in_scope: true
+    tested_modules: ['nmap', 'nikto', 'whatweb', 'zap']

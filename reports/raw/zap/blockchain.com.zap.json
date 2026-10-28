@@ -1,0 +1,60 @@
+{
+  "site": "https://www.blockchain.com",
+  "alerts": [
+    {
+      "alert": "CSP: Wildcard Directive",
+      "risk": "Medium",
+      "confidence": "Medium",
+      "cweid": 16,
+      "wascid": 15,
+      "param": "content-security-policy",
+      "evidence": "default-src *.blockchain.com; script-src 'self' 'unsafe-eval' https://cdn.polyfill.io https://www.facebook.com http://www.google-analytics.com https://www.google.com https://www.gstatic.com *.blockchain.com",
+      "desc": "Content Security Policy (CSP) adds a layer of security which helps to detect and mitigate certain types of attacks such as Cross Site Scripting (XSS) and data injection attacks.",
+      "solution": "Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header without wildcard directives."
+    },
+    {
+      "alert": "CSP: style-src unsafe-inline",
+      "risk": "Medium",
+      "confidence": "Medium",
+      "cweid": 16,
+      "wascid": 15,
+      "param": "content-security-policy",
+      "evidence": "style-src 'self' 'unsafe-inline' https://cdn.polyfill.io https://fonts.googleapis.com",
+      "desc": "The 'unsafe-inline' allows the use of inline resources, such as inline <style> elements and style attributes.",
+      "solution": "Ensure that your web server is properly configured to set the Content-Security-Policy header and avoid 'unsafe-inline'."
+    },
+    {
+      "alert": "X-Frame-Options Header Not Set",
+      "risk": "Medium",
+      "confidence": "Medium",
+      "cweid": 16,
+      "wascid": 15,
+      "param": "X-Frame-Options",
+      "evidence": "",
+      "desc": "X-Frame-Options header is not included in the HTTP response to protect against 'Clickjacking' attacks.",
+      "solution": "Most modern Web browsers support the X-Frame-Options HTTP header. Ensure it is set on all web pages returned by your site."
+    },
+    {
+      "alert": "Absence of Anti-CSRF Tokens",
+      "risk": "Low",
+      "confidence": "Medium",
+      "cweid": 352,
+      "wascid": 9,
+      "param": "",
+      "evidence": "<form class=\"SimpleBuy__FormWrapper-sc-1q8ozsa-5 hFZeRe\">",
+      "desc": "No Anti-CSRF tokens were found in a HTML submission form.",
+      "solution": "Phase: Architecture and Design. Use a vetted library or framework that does not allow this weakness to occur."
+    },
+    {
+      "alert": "Incomplete or No Cache-control and Pragma HTTP Header Set",
+      "risk": "Low",
+      "confidence": "Medium",
+      "cweid": 525,
+      "wascid": 13,
+      "param": "Cache-Control",
+      "evidence": "public, max-age=60",
+      "desc": "The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content.",
+      "solution": "Whenever possible ensure the cache-control HTTP header is set with 'no-cache, no-store, must-revalidate'."
+    }
+  ]
+}

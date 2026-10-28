@@ -1,0 +1,25 @@
+WhatWeb report for https://www.binance.com/en
+Status    : 200 OK
+Title     : Binance: Buy/Sell Bitcoin, Ether and Altcoins | Cryptocurrency Exchange
+IP        : 18.66.78.94
+Country   : UNITED STATES, US
+
+Summary   : Script[application/javascript], HTML5, HTTPServer[Tengine], UncommonHeaders[x-amz-cf-pop,x-cache], X-Frame-Options[SAMEORIGIN], Cookies[BNC_UUID], Strict-Transport-Security[max-age=31536000]
+
+Detected Plugins:
+[ Cookies ]
+    Display the names of cookies in the HTTP headers.
+    String       : BNC_UUID, log_id
+
+[ HTML5 ]
+    HTML version 5, detected by the doctype declaration.
+
+[ HTTPServer ]
+    HTTP server header string.
+    String       : Tengine
+
+[ X-Frame-Options ]
+    String       : SAMEORIGIN
+
+[ X-XSS-Protection ]
+    String       : 1; mode=block

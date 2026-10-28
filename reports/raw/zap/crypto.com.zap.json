@@ -1,0 +1,65 @@
+{
+  "site": "https://crypto.com",
+  "alerts": [
+    {
+      "alert": "CSP: Wildcard Directive",
+      "risk": "Medium",
+      "cweid": 16,
+      "wascid": 15,
+      "param": "content-security-policy",
+      "evidence": "default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *",
+      "desc": "Content Security Policy contains wildcard directives.",
+      "solution": "Refactor CSP to declare explicit origins."
+    },
+    {
+      "alert": "CSP: style-src unsafe-inline",
+      "risk": "Medium",
+      "cweid": 16,
+      "wascid": 15,
+      "param": "content-security-policy",
+      "evidence": "style-src 'self' 'unsafe-inline'",
+      "desc": "style-src unsafe-inline detected.",
+      "solution": "Remove unsafe-inline."
+    },
+    {
+      "alert": "CSP: script-src unsafe-inline",
+      "risk": "Medium",
+      "cweid": 16,
+      "wascid": 15,
+      "param": "content-security-policy",
+      "evidence": "default-src 'self' https: wss: data: 'unsafe-inline' 'unsafe-eval'",
+      "desc": "script-src unsafe-inline detected.",
+      "solution": "Remove unsafe-inline and enforce strict CSP."
+    },
+    {
+      "alert": "Cookie Without SameSite Attribute",
+      "risk": "Low",
+      "cweid": 16,
+      "wascid": 13,
+      "param": "_cf_bm",
+      "evidence": "Set-Cookie: _cf_bm=lPdFYf0EnzDhMqr12zLi_FYvhwrrFVg0IkkNhzAyQ5Hw-163761333",
+      "desc": "A cookie has been set without the SameSite attribute.",
+      "solution": "Add SameSite=Lax or SameSite=Strict."
+    },
+    {
+      "alert": "Incomplete or No Cache-control and Pragma HTTP Header Set",
+      "risk": "Low",
+      "cweid": 525,
+      "wascid": 13,
+      "param": "Cache-Control",
+      "evidence": "public, max-age=60",
+      "desc": "Cache-control header lacks complete anti-caching restrictions.",
+      "solution": "Set Cache-Control: no-cache, no-store, must-revalidate."
+    },
+    {
+      "alert": "X-Content-Type-Options Header Missing",
+      "risk": "Low",
+      "cweid": 16,
+      "wascid": 15,
+      "param": "X-Content-Type-Options",
+      "evidence": "",
+      "desc": "Anti-MIME-Sniffing header missing.",
+      "solution": "Set X-Content-Type-Options: nosniff."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+####################################
+# Uniscan project                  #
+# http://uniscan.sourceforge.net/  #
+####################################
+V. 6.3
+
+Scan date: 16-11-2021 3:19:23
+======================================================================
+Domain: https://wallet.bitcoin.com/
+Server: cloudflare
+IP: 104.18.22.44
+======================================================================
+Scan end date: 16-11-2021 3:19:24
+HTML report saved in: report/wallet.bitcoin.com.html

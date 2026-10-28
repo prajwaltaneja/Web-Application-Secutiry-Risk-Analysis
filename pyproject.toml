@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vapt-framework"
+version = "1.0.0"
+description = "Vulnerability Assessment and Penetration Testing Framework for Web Applications and Cryptocurrency Platforms"
+readme = "README.md"
+authors = [
+    { name = "Prajwal Taneja", email = "prajwal.taneja@alumni.msit.in" },
+    { name = "Priyam Gautam" },
+    { name = "Ambar Hajela" }
+]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Security",
+    "Topic :: Security :: Cryptography"
+]
+dependencies = [
+    "pydantic>=2.0.0",
+    "PyYAML>=6.0",
+    "requests>=2.31.0",
+    "urllib3>=2.0.0",
+    "beautifulsoup4>=4.12.0",
+    "tabulate>=0.9.0",
+    "rich>=13.0.0"
+]
+
+[project.scripts]
+vapt = "vapt_framework.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"

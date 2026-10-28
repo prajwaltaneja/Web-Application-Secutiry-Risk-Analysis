@@ -1,0 +1,78 @@
+{
+  "site": "https://www.binance.com/en",
+  "alerts": [
+    {
+      "alert": "CSP: Wildcard Directive",
+      "risk": "Medium",
+      "cweid": 16,
+      "wascid": 15,
+      "param": "content-security-policy",
+      "evidence": "default-src 'self' *.binance.com *.bnbstatic.com data: blob: *;",
+      "desc": "Wildcard directive found in CSP header.",
+      "solution": "Remove wildcard origins from Content-Security-Policy."
+    },
+    {
+      "alert": "CSP: style-src unsafe-inline",
+      "risk": "Medium",
+      "cweid": 16,
+      "wascid": 15,
+      "param": "content-security-policy",
+      "evidence": "style-src 'self' 'unsafe-inline' https://bin.bnbstatic.com;",
+      "desc": "style-src unsafe-inline allows CSS injection.",
+      "solution": "Disallow unsafe-inline in style-src."
+    },
+    {
+      "alert": "CSP: script-src unsafe-inline",
+      "risk": "Medium",
+      "cweid": 16,
+      "wascid": 15,
+      "param": "content-security-policy",
+      "evidence": "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://bin.bnbstatic.com;",
+      "desc": "script-src unsafe-inline allows arbitrary inline JavaScript execution.",
+      "solution": "Adopt CSP nonces or hashes."
+    },
+    {
+      "alert": "Cross-Domain JavaScript Source File Inclusion",
+      "risk": "Low",
+      "confidence": "Medium",
+      "cweid": 829,
+      "wascid": 15,
+      "param": "https://bin.bnbstatic.com/static/runtime/react/react.production.16.14.0.js",
+      "evidence": "<script src=\"https://bin.bnbstatic.com/static/runtime/react/react.production.16.14.0.js\"></script>",
+      "desc": "The page includes one or more script files from a third-party domain.",
+      "solution": "Ensure JavaScript files are hosted locally or protected by Subresource Integrity."
+    },
+    {
+      "alert": "Cookie Without SameSite Attribute",
+      "risk": "Low",
+      "confidence": "Medium",
+      "cweid": 16,
+      "wascid": 13,
+      "param": "BNC_UUID",
+      "evidence": "Set-Cookie: BNC_UUID=...; path=/; domain=.binance.com; secure",
+      "desc": "A cookie has been set without the SameSite attribute.",
+      "solution": "Ensure that the SameSite attribute is set to 'lax' or 'strict' for all sensitive cookies."
+    },
+    {
+      "alert": "Incomplete or No Cache-control and Pragma HTTP Header Set",
+      "risk": "Low",
+      "cweid": 525,
+      "wascid": 13,
+      "param": "Cache-Control",
+      "evidence": "public, max-age=60",
+      "desc": "Cache-control header lacks complete anti-caching restrictions.",
+      "solution": "Set Cache-Control: no-cache, no-store, must-revalidate."
+    },
+    {
+      "alert": "X-Content-Type-Options Header Missing",
+      "risk": "Low",
+      "confidence": "Medium",
+      "cweid": 16,
+      "wascid": 15,
+      "param": "X-Content-Type-Options",
+      "evidence": "",
+      "desc": "The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'.",
+      "solution": "Ensure that the application/webserver sets the Content-Type-Options header to 'nosniff'."
+    }
+  ]
+}

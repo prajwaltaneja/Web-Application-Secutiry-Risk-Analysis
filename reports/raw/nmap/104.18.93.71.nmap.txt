@@ -1,0 +1,36 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-11-09 09:25 EST
+Nmap scan report for 104.18.93.71
+Host is up (0.021s latency).
+Not shown: 996 filtered ports
+PORT     STATE SERVICE  VERSION
+80/tcp   open  http     Cloudflare http proxy
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-server-header: cloudflare
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+443/tcp  open  ssl/http Cloudflare http proxy
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-server-header: cloudflare
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_sslv2-drown:
+8080/tcp open  http     Cloudflare http proxy
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-server-header: cloudflare
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+8443/tcp open  ssl/https-alt cloudflare
+|_http-server-header: cloudflare
+|_sslv2-drown:
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: bridge|general purpose|switch
+Running (JUST GUESSING): Oracle VirtualBox (96%), QEMU (91%), Bay Networks BayStack 450 switch (software version 3.1.0.22) (87%)
+OS CPE: cpe:/o:oracle:virtualbox cpe:/a:qemu:qemu cpe:/h:baynetworks:baystack_450
+Aggressive OS guesses: Oracle VirtualBox (96%), QEMU user mode network gateway (91%), Bay Networks BayStack 450 switch (87%)
+Network Distance: 2 hops
+TRACEROUTE (using port 443/tcp)
+HOP RTT    ADDRESS
+1   5.46 ms 10.0.2.2
+2   22.68 ms 104.18.93.71
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 176.64 seconds

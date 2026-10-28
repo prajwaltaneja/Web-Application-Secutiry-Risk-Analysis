@@ -1,0 +1,122 @@
+{
+  "XSS attack": {
+    "CSP Wildcard Directive": true,
+    "CSP: style-src unsafe inline": true,
+    "CSP: script-src unsafe inline": true,
+    "X-frame option header not set": false,
+    "Absence of Anti-CSRF Tokens": false,
+    "Cross-domain JavaScript source file inclusion": false,
+    "Secure pages include mixed content": false,
+    "Cookie without same site attribute": false,
+    "Incomplete or no cache control": false,
+    "X-content type option header missing": true
+  },
+  "XSSI attack": {
+    "CSP Wildcard Directive": false,
+    "CSP: style-src unsafe inline": false,
+    "CSP: script-src unsafe inline": false,
+    "X-frame option header not set": false,
+    "Absence of Anti-CSRF Tokens": false,
+    "Cross-domain JavaScript source file inclusion": true,
+    "Secure pages include mixed content": false,
+    "Cookie without same site attribute": true,
+    "Incomplete or no cache control": false,
+    "X-content type option header missing": false
+  },
+  "Data Injection Attack": {
+    "CSP Wildcard Directive": true,
+    "CSP: style-src unsafe inline": false,
+    "CSP: script-src unsafe inline": false,
+    "X-frame option header not set": false,
+    "Absence of Anti-CSRF Tokens": false,
+    "Cross-domain JavaScript source file inclusion": false,
+    "Secure pages include mixed content": false,
+    "Cookie without same site attribute": false,
+    "Incomplete or no cache control": false,
+    "X-content type option header missing": false
+  },
+  "Clickjacking Attack": {
+    "CSP Wildcard Directive": false,
+    "CSP: style-src unsafe inline": false,
+    "CSP: script-src unsafe inline": false,
+    "X-frame option header not set": true,
+    "Absence of Anti-CSRF Tokens": false,
+    "Cross-domain JavaScript source file inclusion": false,
+    "Secure pages include mixed content": false,
+    "Cookie without same site attribute": false,
+    "Incomplete or no cache control": false,
+    "X-content type option header missing": false
+  },
+  "CSRF Attack": {
+    "CSP Wildcard Directive": false,
+    "CSP: style-src unsafe inline": false,
+    "CSP: script-src unsafe inline": false,
+    "X-frame option header not set": false,
+    "Absence of Anti-CSRF Tokens": true,
+    "Cross-domain JavaScript source file inclusion": false,
+    "Secure pages include mixed content": false,
+    "Cookie without same site attribute": true,
+    "Incomplete or no cache control": false,
+    "X-content type option header missing": false
+  },
+  "Man-In-The-Middle Attack": {
+    "CSP Wildcard Directive": false,
+    "CSP: style-src unsafe inline": false,
+    "CSP: script-src unsafe inline": false,
+    "X-frame option header not set": false,
+    "Absence of Anti-CSRF Tokens": false,
+    "Cross-domain JavaScript source file inclusion": false,
+    "Secure pages include mixed content": true,
+    "Cookie without same site attribute": false,
+    "Incomplete or no cache control": false,
+    "X-content type option header missing": false
+  },
+  "Timing Attack": {
+    "CSP Wildcard Directive": false,
+    "CSP: style-src unsafe inline": false,
+    "CSP: script-src unsafe inline": false,
+    "X-frame option header not set": false,
+    "Absence of Anti-CSRF Tokens": false,
+    "Cross-domain JavaScript source file inclusion": false,
+    "Secure pages include mixed content": false,
+    "Cookie without same site attribute": true,
+    "Incomplete or no cache control": false,
+    "X-content type option header missing": false
+  },
+  "Cache Poisoning Software Attack": {
+    "CSP Wildcard Directive": false,
+    "CSP: style-src unsafe inline": false,
+    "CSP: script-src unsafe inline": false,
+    "X-frame option header not set": false,
+    "Absence of Anti-CSRF Tokens": false,
+    "Cross-domain JavaScript source file inclusion": false,
+    "Secure pages include mixed content": false,
+    "Cookie without same site attribute": false,
+    "Incomplete or no cache control": true,
+    "X-content type option header missing": false
+  },
+  "File Inclusion Attack": {
+    "CSP Wildcard Directive": false,
+    "CSP: style-src unsafe inline": false,
+    "CSP: script-src unsafe inline": false,
+    "X-frame option header not set": false,
+    "Absence of Anti-CSRF Tokens": false,
+    "Cross-domain JavaScript source file inclusion": true,
+    "Secure pages include mixed content": false,
+    "Cookie without same site attribute": false,
+    "Incomplete or no cache control": false,
+    "X-content type option header missing": false
+  },
+  "MIME Sniffing Attack": {
+    "CSP Wildcard Directive": false,
+    "CSP: style-src unsafe inline": false,
+    "CSP: script-src unsafe inline": false,
+    "X-frame option header not set": false,
+    "Absence of Anti-CSRF Tokens": false,
+    "Cross-domain JavaScript source file inclusion": false,
+    "Secure pages include mixed content": false,
+    "Cookie without same site attribute": false,
+    "Incomplete or no cache control": false,
+    "X-content type option header missing": true
+  }
+}

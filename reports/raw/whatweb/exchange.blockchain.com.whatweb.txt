@@ -1,0 +1,35 @@
+WhatWeb report for https://exchange.blockchain.com
+Status    : 200 OK
+Title     : Blockchain Exchange
+IP        : 104.18.93.71
+Country   : UNITED STATES, US
+
+Summary   : Script[application/json], HTML5, HTTPServer[Tengine], UncommonHeaders[sec-ch-ua-mobile,sec-ch-ua-platform,vary], X-Frame-Options[SAMEORIGIN], Cookies[__cf_bm], Strict-Transport-Security[max-age=31536000], Open-Graph-Protocol[website]
+
+Detected Plugins:
+[ Cookies ]
+    Display the names of cookies in the HTTP headers.
+    String       : __cf_bm
+
+[ HTML5 ]
+    HTML version 5, detected by the doctype declaration.
+
+[ HTTPServer ]
+    HTTP server header string.
+    String       : Tengine (from server string)
+
+[ Open-Graph-Protocol ]
+    The Open Graph protocol enables you to integrate your web pages into the social graph.
+    version      : website
+
+[ Strict-Transport-Security ]
+    Strict-Transport-Security is an HTTP header that restricts a web browser from accessing a website without the security of the HTTPS protocol.
+    String       : max-age=31536000; includeSubDomains
+
+[ X-Frame-Options ]
+    This plugin retrieves the X-Frame-Options value from the HTTP header.
+    String       : SAMEORIGIN
+
+[ X-XSS-Protection ]
+    This plugin retrieves the X-XSS-Protection value from the HTTP header.
+    String       : 1; mode=block

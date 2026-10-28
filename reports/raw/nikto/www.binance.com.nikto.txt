@@ -1,0 +1,20 @@
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          18.66.78.84
++ Target Hostname:    www.binance.com
++ Target Port:        443
+---------------------------------------------------------------------------
++ SSL Info:        Subject:  /C=KY/L=George Town/O=Binance Holdings Limited/OU=IT/CN=*.binance.com
+                   Ciphers:  TLS_AES_128_GCM_SHA256
+                   Issuer:   /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=GeoTrust RSA CA 2018
++ Message:         Multiple IP addresses found: 18.66.78.84, 18.66.78.94, 18.66.78.14, 18.66.78.75
++ Start Time:      2021-11-16 03:58:45 (GMT-5)
+---------------------------------------------------------------------------
++ Server: Tengine
++ Retrieved via header: 1.1 49e4e8db0475494a60b9396a5a6374749.cloudfront.net (CloudFront)
++ Uncommon header 'x-amz-cf-pop' found, with contents: DEL51-P2
++ Uncommon header 'x-cache' found, with contents: Hit from cloudfront
++ The site uses SSL and Expect-CT header is not present.
++ Root page / redirects to: http://www.binance.com/en
++ Scan terminated: 20 error(s) and 5 item(s) reported on remote host
++ End Time:        2021-11-16 03:59:08 (GMT-5) (23 seconds)

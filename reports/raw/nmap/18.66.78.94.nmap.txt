@@ -1,0 +1,27 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-11-16 03:59 EST
+Nmap scan report for 18.66.78.94
+Host is up (0.025s latency).
+Not shown: 998 filtered ports
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Amazon CloudFront httpd
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-server-header: CloudFront
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+443/tcp open  ssl/https CloudFront
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-server-header: CloudFront
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_ssl-ccs-injection: No reply from server (TIMEOUT)
+|_sslv2-drown:
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: bridge|general purpose
+Running (JUST GUESSING): Oracle VirtualBox (98%), QEMU (92%)
+Network Distance: 2 hops
+TRACEROUTE (using port 443/tcp)
+HOP RTT     ADDRESS
+1   4.81 ms 10.0.2.2
+2   18.73 ms 18.66.78.94
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 333.81 seconds

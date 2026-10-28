@@ -1,0 +1,16 @@
+####################################
+# Uniscan project                  #
+# http://uniscan.sourceforge.net/  #
+####################################
+V. 6.3
+
+Scan date: 16-11-2021 3:53:38
+======================================================================
+[!] https://www.binance.com/en redirected to https://www.binance.com/
+[+] New target is: https://www.binance.com/
+Domain: https://www.binance.com/
+Server: Tengine
+IP: 18.66.78.94
+======================================================================
+Scan end date: 16-11-2021 3:53:40
+HTML report saved in: report/www.binance.com.html
